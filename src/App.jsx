@@ -1,9 +1,26 @@
 import "./App.css";
+import Testimonio from './componentes/Testimonio';
+import Emma from './imagenes/testimonio-emma.png';
+import Sarah from './imagenes/testimonio-sarah.png';
+import Shawn from './imagenes/testimonio-shawn.png';
 
 function App() {
   return (
-    <div className="App">
-    
+    <div className='App'>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp:</h1>
+        <Testimonio
+          nombre='Emma Bostian'
+          pais='Suecia'
+          imagen={Emma}
+          cargo='Ingeniera de Software'
+          empresa='Spotify'
+          testimonio='Siempre he tenido problemas para aprender JavaScript. He tomado muchos cursos, pero el curso de freeCodeCamp fue el que se quedó. Estudiar JavaScript en freeCodeCamp me dio las habilidades y la confianza que necesitaba para conseguir el trabajo de mis sueños como ingeniera de software en Spotify.'
+          
+        />      
+
+      </div>
+
     </div>
   )
 }
