@@ -1,4 +1,4 @@
-import React from 'react';
+// No hace falta importar React
 import '../hojas-de-estilo/Testimonio.css';
 
 function Testimonio(props) {
@@ -13,9 +13,9 @@ function Testimonio(props) {
       
       <div className='contenedor-texto-testimonio'>
 
-        <p className='nombre-testimonio'>{ props.nombre } en { props.pais }</p>
+        <p className='nombre-testimonio'><strong>{ props.nombre }</strong> en { props.pais }</p>
 
-        <p className='cargo-testimonio'>{ props.cargo } en { props.empresa }</p>  
+        <p className='cargo-testimonio'>{ props.cargo } en <strong>{ props.empresa }</strong></p>  
 
         <p className='texto-testimonio'>{ props.testimonio }</p>
 
